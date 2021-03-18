@@ -12,12 +12,12 @@
 <body>
     <h1> <%= skills.skill %></h1>
     <h3> <%= skills.description %></h3>
-    <a href="/skills"> RETURN TO SKILLS </a>
-    <a id="return" href="/"> RETURN HOME </a>
     <form action="/skills/<%= skills.id %>?_method=DELETE" class="delete-form" method="POST">
-        <button type="submit">X</button>
-    </form>
-    <a href="/skills/<%= skills.id %>/edit">EDIT SKILL</a>
+        <button type="submit">DELETE </button>
+    </form><br>
+    <a style="color:green" href="/skills/<%= skills.id %>/edit">EDIT</a>
+    </br>
+    <a class= "returnskill" href="/skills"> RETURN  </a>
 </body>
 
 </html>

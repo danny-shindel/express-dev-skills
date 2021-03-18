@@ -10,3 +10,20 @@ a {
 #return {
   color: red;
 }
+
+#intro {
+  text-decoration: none;
+  color: red;
+}
+
+#darkblue {
+  color: green;
+}
+
+.delete-form > button{
+  color: red;
+}
+
+.returnskill {
+  color:darkblue
+}
