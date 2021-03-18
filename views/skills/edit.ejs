@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,15 @@
     <title>SKILLS</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
+
 <body>
-    <h1> My Developer Skills</h1>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-            <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-            </li>
-        <% }); %>
-    </ul>
-    <a href="/skills/new">ADD NEW SKILL</a>
+    <h1>EDIT SKILL</h1>
+    <form action="/skills/<%= skills.id %>?_method=PUT" method="POST">
+        <input type="text" name="skill" value="<%= skills.skill %>">
+        <button type="submit">EDIT</button>
+    </form>
+    <a href="/skills"> RETURN TO SKILLS </a>
     <a id="return" href="/"> RETURN HOME </a>
 </body>
+
 </html>
